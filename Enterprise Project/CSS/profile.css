@@ -1,0 +1,41 @@
+.form-profile {
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px; /* Increased padding for a cleaner look */
+    border: 2px solid rgb(211, 211, 211);
+    border-radius: 12px;
+}
+.form-profile h2 {
+    text-align: center;
+}
+.form-label {
+    font-weight: bold;
+    color: #333; 
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    background-color: #000; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn.btn-primary:hover {
+    background-color: #555;
+}
+
+
+.grey-input:read-only {
+    background-color: #eee; /* Set a grey background color for read-only inputs */
+    color: #555; /* Set a darker text color for better visibility */
+}
+
