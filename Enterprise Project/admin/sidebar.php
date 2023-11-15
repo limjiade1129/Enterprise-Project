@@ -1,6 +1,20 @@
 <?php
 include 'config.php';
 session_start();?>
+
+<script>
+    // JavaScript code for logout confirmation
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector('.logout-link').addEventListener('click', function (e) {
+            e.preventDefault();
+            var confirmLogout = confirm("Are you sure you want to logout?");
+            if (confirmLogout) {
+                window.location.href = "adminlogin.php";
+            }
+        });
+    });
+</script>
+
 <div class="bg-sidebar vh-100 w-50 position-fixed">
             <div class="log d-flex justify-content-between">
                 <h1 class="text-start ms-5 ps-1 mt-3 h6 fw-bold">JD Tuition Centre (Admin)</h1>
@@ -23,11 +37,9 @@ session_start();?>
                                     class="fal fa-bookmark me-2"></i> <span>Class</span></a></li>
                         <li class="h7"><a class=" nav-link text-dark" href="contactus_list.php"><i
                                     class="fal fa-solid fa-comment me-2"></i> <span>Contact Us</span></a></li>
-                        <li class="h7"><a class=" nav-link text-dark" href="payment_list.php"><i
-                                    class="fal fa-usd-square me-2"></i> <span>Payment</span></a></li>
-                        <li class="h7"><a class=" nav-link text-dark" href=""><i
-                                    class="fal fa-file-chart-line me-2"></i> <span>Report</span></a></li>
-                        <li class="h7"><a class=" nav-link text-dark" href="logout.php"><i
+                        <li class="h7"><a class=" nav-link text-dark" href="sales_list.php"><i
+                                    class="fal fa-usd-square me-2"></i> <span>Sales</span></a></li>
+                        <li class="h7"><a class=" nav-link text-dark logout-link" href="#"><i
                                     class="fal fa-sign-out-alt ms-2"></i> <span>Logout</span></a></li>
                 </ul>
                 
